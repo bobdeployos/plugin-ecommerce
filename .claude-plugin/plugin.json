@@ -1,8 +1,8 @@
 {
-  "name": "sneakers-storefront",
-  "displayName": "Sneakers Storefront Toolkit",
-  "version": "0.2.0",
-  "description": "Everything needed to build on the APEX ATELIER sneaker storefront: seven skills (ReUI premium block know-how and integration workflow, Next.js 16 breaking-change rules, the catalog data contract and product-entry workflow, a frontend contract audit), four specialist agents, four slash commands and guardrail hooks that catch Radix habits, raw <img> tags and hardcoded prices the moment they are written.",
+  "name": "boutique-sneakers",
+  "displayName": "Boutique Sneakers — boîte à outils",
+  "version": "0.3.0",
+  "description": "Tout ce qu’il faut pour construire la boutique de sneakers APEX ATELIER : sept skills (blocs premium ReUI et procédure d’intégration, règles des changements cassants de Next.js 16, contrat de données du catalogue et procédure de fiche produit, audit du contrat frontend), quatre agents spécialisés, quatre commandes slash et des hooks garde-fous qui repèrent les réflexes Radix, les balises <img> brutes et les prix en dur dès qu’ils sont écrits.",
   "author": {
     "name": "bobdeployos"
   },

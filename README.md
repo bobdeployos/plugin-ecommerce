@@ -1,120 +1,134 @@
-# Sneakers Storefront Toolkit
+# Boutique Sneakers — boîte à outils
 
-A Claude Code plugin that packages everything needed to work on the
-APEX ATELIER sneaker storefront — a desktop-only Next.js 16 shop built from
-ReUI premium blocks on the shadcn `base-nova` (Base UI) style.
+Un plugin Claude Code qui rassemble tout ce qu'il faut pour travailler sur la
+boutique de sneakers APEX ATELIER — une boutique Next.js 16 desktop uniquement,
+construite à partir de blocs premium ReUI sur le style shadcn `base-nova`
+(Base UI).
 
-It bundles all five plugin component types: **skills**, **agents**,
-**commands**, **hooks** and **scripts**.
+Il réunit les cinq types de composants de plugin : **skills**, **agents**,
+**commandes**, **hooks** et **scripts**.
 
-## Install
+> La documentation du plugin est en français. Le code, les commentaires de
+> code et tout le texte visible dans la boutique (UI, fiches produit) restent
+> en **anglais** — les skills et les agents le rappellent à chaque fois.
+
+## Installation
 
 ```
 /plugin marketplace add bobdeployos/plugin-ecommerce
-/plugin install sneakers-storefront@sneakers-storefront-marketplace
+/plugin install boutique-sneakers@boutique-sneakers-marketplace
 ```
 
-For local development, point the marketplace at a checkout instead:
-`/plugin marketplace add ./plugin-sneakers-storefront`.
+Pour le développement local, pointe la marketplace vers une copie locale :
+`/plugin marketplace add ./chemin/vers/le/plugin`.
 
-## What is in it
+## Contenu
 
-### Skills — the know-how
+### Skills — le savoir-faire
 
-Loaded automatically when the work matches. Four are **knowledge** skills
-(what is true about the stack); three are **workflow** skills (the procedure to
-follow, each with a `reference.md`, an `examples.md` and, where useful, a
-script).
+Chargés automatiquement quand le travail correspond. Chaque skill suit la même
+structure :
 
-| Skill | Kind | Covers |
+- `SKILL.md` — quand l'utiliser et la procédure à suivre ;
+- `reference.md` — les règles détaillées, avec le pourquoi de chacune ;
+- `examples.md` — des exemples concrets, avant / après.
+
+Quatre sont des skills de **référence** (ce qui est vrai sur la stack) ; trois
+sont des skills de **procédure** (la marche à suivre pour une tâche).
+
+| Skill | Type | Couvre |
 | --- | --- | --- |
-| `reui-premium-blocks` | knowledge | Finding, installing and adapting premium blocks; the Base UI vs Radix trap; licence setup; theming |
-| `nextjs-16-rules` | knowledge | The Next 16 breaking changes that actually bite — async params, image config, the removal of `next lint`, and the RSC boundary bug |
-| `storefront-architecture` | knowledge | Where everything lives, the desktop-only shell, cart state, order totals |
-| `product-catalog` | knowledge | The `Product` contract, the editorial voice, and how to verify a photo resolves |
-| `reui-block-integration` | workflow | Build a new page, section or panel from the right block — search, read the real API, install, adapt into `components/storefront/`, validate |
-| `frontend-contract-audit` | workflow | Audit a UI diff against the contract before calling it done, with a severity-ranked report format |
-| `catalog-product-entry` | workflow | Write or revise a product entry field by field, in voice, with every photo checked by `scripts/verify_photo.sh` |
+| `blocs-premium-reui` | référence | Trouver, installer et adapter les blocs premium ; le piège Base UI vs Radix ; la licence ; le thème |
+| `regles-nextjs-16` | référence | Les changements cassants de Next 16 qui font vraiment mal — `params` asynchrones, config des images, disparition de `next lint`, et le bug de frontière RSC |
+| `architecture-boutique` | référence | Où vit chaque chose, le shell desktop uniquement, l'état du panier, le calcul des totaux |
+| `catalogue-produits` | référence | Le contrat `Product`, le ton éditorial, et comment vérifier qu'une photo répond |
+| `integration-bloc-reui` | procédure | Construire une page, une section ou un panneau à partir du bon bloc — recherche, vraie API, installation, adaptation dans `components/storefront/`, validation |
+| `audit-contrat-frontend` | procédure | Auditer un diff d'interface par rapport au contrat avant de le déclarer terminé, avec un rapport classé par gravité |
+| `fiche-produit-catalogue` | procédure | Rédiger ou réviser une fiche produit champ par champ, dans le ton, chaque photo vérifiée par `scripts/verifier_photo.sh` |
 
-The agents preload the matching workflow skill: `block-scout` →
-`reui-block-integration`, `ui-reviewer` → `frontend-contract-audit`,
-`catalog-writer` → `catalog-product-entry`.
+Les agents préchargent le skill de procédure correspondant : `eclaireur-blocs` →
+`integration-bloc-reui`, `relecteur-ui` → `audit-contrat-frontend`,
+`redacteur-catalogue` → `fiche-produit-catalogue`.
 
-### Agents — the specialists
+### Agents — les spécialistes
 
-| Agent | Use it for |
+| Agent | À utiliser pour |
 | --- | --- |
-| `block-scout` | Deciding which ReUI block a new surface should be built from. Reports a recommendation and the real API; writes no app code |
-| `ui-reviewer` | Auditing a diff against the frontend contract — composition, layout, tokens, images, data discipline |
-| `catalog-writer` | Adding or rewriting products, in voice, with every photo verified |
-| `checkout-auditor` | Walking the whole purchase path for numbers and counts that quietly disagree |
+| `eclaireur-blocs` | Décider à partir de quel bloc ReUI construire une nouvelle surface. Rapporte une recommandation et la vraie API ; n'écrit pas de code applicatif |
+| `relecteur-ui` | Auditer un diff par rapport au contrat frontend — composition, mise en page, tokens, images, discipline des données |
+| `redacteur-catalogue` | Ajouter ou réécrire des produits, dans le ton, chaque photo vérifiée |
+| `auditeur-tunnel-achat` | Parcourir tout le tunnel d'achat à la recherche de montants et de compteurs qui divergent en silence |
 
-### Commands
+### Commandes
 
-| Command | Does |
+| Commande | Rôle |
 | --- | --- |
-| `/storefront:status` | Inventory + contract scan: routes, blocks, catalog, violations |
-| `/storefront:audit-ui` | Audits changed frontend code; `--fix` applies the fixes |
-| `/storefront:new-page` | Adds a route, built from the right block rather than hand-rolled |
-| `/storefront:product` | Adds or revises a catalog product, photos verified |
+| `/boutique-sneakers:etat` | Inventaire + scan du contrat : routes, blocs, catalogue, violations |
+| `/boutique-sneakers:auditer-ui` | Audite le code frontend modifié ; `--fix` applique les corrections |
+| `/boutique-sneakers:nouvelle-page` | Ajoute une route, construite à partir du bon bloc plutôt que faite main |
+| `/boutique-sneakers:produit` | Ajoute ou révise un produit du catalogue, photos vérifiées |
 
-### Hooks — the guardrails
+### Hooks — les garde-fous
 
-**`PostToolUse`** on `Write|Edit` runs `hook-storefront-guard.mjs` against the
-file just written. It exists because every mistake it catches **typechecks and
-builds cleanly** — nothing else will find them:
+**`PostToolUse`** sur `Write|Edit` lance `hook-garde-boutique.mjs` sur le
+fichier qui vient d'être écrit. Il existe parce que toutes les erreurs qu'il
+attrape **passent le typecheck et le build** — rien d'autre ne les trouvera :
 
-- `asChild` in a Base UI project (silently does nothing)
-- raw `<img>` instead of `next/image`
-- importing from `components/blocks/`, the pristine reference copy
-- responsive prefixes in a desktop-only layout
-- raw Tailwind palette classes instead of theme tokens
-- hardcoded prices and `toFixed(2)` instead of the money helpers
-- `props.params` / `props.searchParams` read without `await`
+- `asChild` dans un projet Base UI (ne fait rien, en silence)
+- `<img>` brut au lieu de `next/image`
+- import depuis `components/blocks/`, la copie de référence intacte
+- préfixes responsive dans une mise en page desktop uniquement
+- classes de palette Tailwind brutes au lieu des tokens du thème
+- prix en dur et `toFixed(2)` au lieu des helpers de formatage
+- `props.params` / `props.searchParams` lus sans `await`
 
-It reports rather than blocks, so the model can correct itself in the same turn.
+Il signale au lieu de bloquer, pour que le modèle puisse se corriger dans le
+même tour.
 
-**`SessionStart`** runs `hook-session-brief.mjs`, which puts the two
-easy-to-get-wrong facts up front — this is Base UI, and this is Next 16 — and
-warns if `REUI_LICENSE_KEY` is missing. It stays silent outside a matching
-project.
+**`SessionStart`** lance `hook-brief-session.mjs`, qui rappelle d'emblée les
+deux faits faciles à rater — c'est du Base UI, et c'est du Next 16 — et
+prévient si `REUI_LICENSE_KEY` est absente. Il reste silencieux en dehors d'un
+projet compatible.
 
 ### Scripts
 
-Runnable on their own from the storefront project root:
+Utilisables seuls depuis la racine du projet boutique :
 
 ```bash
-node scripts/storefront-status.mjs            # inventory + contract scan
-node scripts/storefront-status.mjs --verbose
-node scripts/storefront-status.mjs --violations-only
-node scripts/verify-photos.mjs                # check every catalog photo resolves
+node scripts/etat-boutique.mjs            # inventaire + scan du contrat
+node scripts/etat-boutique.mjs --verbose
+node scripts/etat-boutique.mjs --violations-only
+node scripts/verifier-photos.mjs                # vérifie que chaque photo du catalogue répond
 ```
 
-Both exit non-zero on failure, so they work in CI as well as in a conversation.
+Les deux sortent avec un code non nul en cas d'échec, donc ils fonctionnent en
+CI comme en conversation.
 
-## Layout
+## Arborescence
 
 ```
 .claude-plugin/
-  plugin.json          manifest
-  marketplace.json     local marketplace entry
-agents/                4 subagent definitions
-commands/              4 slash commands
-skills/<name>/         7 skills (SKILL.md, plus reference.md, examples.md, scripts/ for the workflow ones)
+  plugin.json          manifeste
+  marketplace.json     entrée de marketplace
+agents/                4 définitions de sous-agents
+commands/              4 commandes slash
+skills/<nom>/          7 skills (SKILL.md, reference.md, examples.md, et scripts/ au besoin)
 hooks/hooks.json       PostToolUse + SessionStart
-scripts/               hook and utility scripts (Node, no dependencies)
+scripts/               scripts des hooks et utilitaires (Node, sans dépendance)
 ```
 
-`${CLAUDE_PLUGIN_ROOT}` resolves to the plugin install directory, which is how
-the commands and hooks locate the scripts regardless of where the plugin ends
-up on disk.
+`${CLAUDE_PLUGIN_ROOT}` pointe vers le dossier d'installation du plugin, et
+`${CLAUDE_SKILL_DIR}` vers le dossier du skill courant : c'est ainsi que les
+commandes, les hooks et les skills trouvent leurs scripts, où que le plugin
+soit installé.
 
-## Requirements
+## Prérequis
 
-- Node 18+ (the scripts use the global `fetch`)
-- A storefront project with `components.json` declaring a `@reui` registry and
-  `next` in its dependencies — the session hook checks for both before saying
-  anything.
+- Node 18+ (les scripts utilisent le `fetch` global)
+- `bash` et `curl` pour `verifier_photo.sh` (Git Bash suffit sous Windows)
+- Un projet boutique dont `components.json` déclare un registre `@reui` et
+  qui a `next` dans ses dépendances — le hook de session vérifie les deux
+  avant de dire quoi que ce soit.
 
 ## Licence
 

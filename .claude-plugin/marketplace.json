@@ -1,15 +1,15 @@
 {
-  "name": "sneakers-storefront-marketplace",
-  "description": "Marketplace for the APEX ATELIER sneaker storefront toolkit.",
+  "name": "boutique-sneakers-marketplace",
+  "description": "Marketplace du toolkit de la boutique de sneakers APEX ATELIER.",
   "owner": {
     "name": "bobdeployos"
   },
   "plugins": [
     {
-      "name": "sneakers-storefront",
+      "name": "boutique-sneakers",
       "source": "./",
-      "version": "0.2.0",
-      "description": "Seven skills, four agents, four commands and guardrail hooks for building a ReUI + Next.js 16 sneaker storefront.",
+      "version": "0.3.0",
+      "description": "Sept skills, quatre agents, quatre commandes et des hooks garde-fous pour construire une boutique de sneakers ReUI + Next.js 16.",
       "category": "development",
       "homepage": "https://github.com/bobdeployos/plugin-ecommerce"
     }

@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/hook-storefront-guard.mjs\""
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/hook-garde-boutique.mjs\""
           }
         ]
       }
@@ -16,7 +16,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/hook-session-brief.mjs\""
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/hook-brief-session.mjs\""
           }
         ]
       }
