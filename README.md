@@ -10,7 +10,7 @@ It bundles all five plugin component types: **skills**, **agents**,
 ## Install
 
 ```
-/plugin marketplace add bobdeployos/plugin-sneakers-storefront
+/plugin marketplace add bobdeployos/plugin-ecommerce
 /plugin install sneakers-storefront@sneakers-storefront-marketplace
 ```
 

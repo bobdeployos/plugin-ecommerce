@@ -11,7 +11,7 @@
       "version": "0.2.0",
       "description": "Seven skills, four agents, four commands and guardrail hooks for building a ReUI + Next.js 16 sneaker storefront.",
       "category": "development",
-      "homepage": "https://github.com/bobdeployos/plugin-sneakers-storefront"
+      "homepage": "https://github.com/bobdeployos/plugin-ecommerce"
     }
   ]
 }
