@@ -1,11 +1,13 @@
 {
   "name": "sneakers-storefront",
   "displayName": "Sneakers Storefront Toolkit",
-  "version": "0.1.0",
-  "description": "Everything needed to build on the APEX ATELIER sneaker storefront: ReUI premium block know-how, Next.js 16 breaking-change rules, the catalog data contract, four specialist agents, four slash commands and guardrail hooks that catch Radix habits, raw <img> tags and hardcoded prices the moment they are written.",
+  "version": "0.2.0",
+  "description": "Everything needed to build on the APEX ATELIER sneaker storefront: seven skills (ReUI premium block know-how and integration workflow, Next.js 16 breaking-change rules, the catalog data contract and product-entry workflow, a frontend contract audit), four specialist agents, four slash commands and guardrail hooks that catch Radix habits, raw <img> tags and hardcoded prices the moment they are written.",
   "author": {
     "name": "bobdeployos"
   },
+  "homepage": "https://github.com/bobdeployos/plugin-sneakers-storefront",
+  "repository": "https://github.com/bobdeployos/plugin-sneakers-storefront",
   "license": "MIT",
   "keywords": [
     "ecommerce",

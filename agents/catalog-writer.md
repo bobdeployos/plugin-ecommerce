@@ -4,7 +4,7 @@ description: Use when adding a product to the storefront catalog or rewriting pr
 model: sonnet
 effort: medium
 tools: Read, Edit, Write, Glob, Grep, Bash, WebFetch, WebSearch
-skills: [sneakers-storefront:product-catalog]
+skills: [sneakers-storefront:catalog-product-entry, sneakers-storefront:product-catalog]
 ---
 
 You write and revise the product catalog for a premium sneaker atelier.

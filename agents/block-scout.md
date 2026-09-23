@@ -4,7 +4,7 @@ description: Use when a new storefront surface is needed (a page, a section, a p
 model: sonnet
 effort: medium
 tools: Read, Glob, Grep
-skills: [sneakers-storefront:reui-premium-blocks, sneakers-storefront:storefront-architecture]
+skills: [sneakers-storefront:reui-block-integration, sneakers-storefront:reui-premium-blocks, sneakers-storefront:storefront-architecture]
 ---
 
 You are the ReUI block scout.

@@ -1,8 +1,8 @@
 # Sneakers Storefront Toolkit
 
 A Claude Code plugin that packages everything needed to work on the
-[APEX ATELIER](../ecommerce-demo) sneaker storefront — a desktop-only Next.js 16
-shop built from ReUI premium blocks.
+APEX ATELIER sneaker storefront — a desktop-only Next.js 16 shop built from
+ReUI premium blocks on the shadcn `base-nova` (Base UI) style.
 
 It bundles all five plugin component types: **skills**, **agents**,
 **commands**, **hooks** and **scripts**.
@@ -10,25 +10,35 @@ It bundles all five plugin component types: **skills**, **agents**,
 ## Install
 
 ```
-/plugin marketplace add ../plugin-sneakers-storefront
+/plugin marketplace add bobdeployos/plugin-sneakers-storefront
 /plugin install sneakers-storefront@sneakers-storefront-marketplace
 ```
 
-From a checkout elsewhere, point the marketplace at this directory or its git
-remote instead.
+For local development, point the marketplace at a checkout instead:
+`/plugin marketplace add ./plugin-sneakers-storefront`.
 
 ## What is in it
 
 ### Skills — the know-how
 
-Loaded automatically when the work matches.
+Loaded automatically when the work matches. Four are **knowledge** skills
+(what is true about the stack); three are **workflow** skills (the procedure to
+follow, each with a `reference.md`, an `examples.md` and, where useful, a
+script).
 
-| Skill | Covers |
-| --- | --- |
-| `reui-premium-blocks` | Finding, installing and adapting premium blocks; the Base UI vs Radix trap; licence setup; theming |
-| `nextjs-16-rules` | The Next 16 breaking changes that actually bite — async params, image config, the removal of `next lint`, and the RSC boundary bug |
-| `storefront-architecture` | Where everything lives, the desktop-only shell, cart state, order totals |
-| `product-catalog` | The `Product` contract, the editorial voice, and how to verify a photo resolves |
+| Skill | Kind | Covers |
+| --- | --- | --- |
+| `reui-premium-blocks` | knowledge | Finding, installing and adapting premium blocks; the Base UI vs Radix trap; licence setup; theming |
+| `nextjs-16-rules` | knowledge | The Next 16 breaking changes that actually bite — async params, image config, the removal of `next lint`, and the RSC boundary bug |
+| `storefront-architecture` | knowledge | Where everything lives, the desktop-only shell, cart state, order totals |
+| `product-catalog` | knowledge | The `Product` contract, the editorial voice, and how to verify a photo resolves |
+| `reui-block-integration` | workflow | Build a new page, section or panel from the right block — search, read the real API, install, adapt into `components/storefront/`, validate |
+| `frontend-contract-audit` | workflow | Audit a UI diff against the contract before calling it done, with a severity-ranked report format |
+| `catalog-product-entry` | workflow | Write or revise a product entry field by field, in voice, with every photo checked by `scripts/verify_photo.sh` |
+
+The agents preload the matching workflow skill: `block-scout` →
+`reui-block-integration`, `ui-reviewer` → `frontend-contract-audit`,
+`catalog-writer` → `catalog-product-entry`.
 
 ### Agents — the specialists
 
@@ -90,7 +100,7 @@ Both exit non-zero on failure, so they work in CI as well as in a conversation.
   marketplace.json     local marketplace entry
 agents/                4 subagent definitions
 commands/              4 slash commands
-skills/<name>/SKILL.md 4 skills
+skills/<name>/         7 skills (SKILL.md, plus reference.md, examples.md, scripts/ for the workflow ones)
 hooks/hooks.json       PostToolUse + SessionStart
 scripts/               hook and utility scripts (Node, no dependencies)
 ```

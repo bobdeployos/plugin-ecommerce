@@ -1,6 +1,6 @@
 {
   "name": "sneakers-storefront-marketplace",
-  "description": "Local marketplace for the APEX ATELIER sneaker storefront toolkit.",
+  "description": "Marketplace for the APEX ATELIER sneaker storefront toolkit.",
   "owner": {
     "name": "bobdeployos"
   },
@@ -8,7 +8,10 @@
     {
       "name": "sneakers-storefront",
       "source": "./",
-      "description": "ReUI premium blocks, Next.js 16 rules, catalog contract, specialist agents, commands and guardrail hooks for the APEX ATELIER storefront."
+      "version": "0.2.0",
+      "description": "Seven skills, four agents, four commands and guardrail hooks for building a ReUI + Next.js 16 sneaker storefront.",
+      "category": "development",
+      "homepage": "https://github.com/bobdeployos/plugin-sneakers-storefront"
     }
   ]
 }

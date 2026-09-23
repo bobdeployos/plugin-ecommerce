@@ -4,7 +4,7 @@ description: Use after changing anything under components/ or app/ to audit the 
 model: sonnet
 effort: high
 tools: Read, Glob, Grep, Bash
-skills: [sneakers-storefront:reui-premium-blocks, sneakers-storefront:nextjs-16-rules, sneakers-storefront:storefront-architecture]
+skills: [sneakers-storefront:frontend-contract-audit, sneakers-storefront:reui-premium-blocks, sneakers-storefront:nextjs-16-rules, sneakers-storefront:storefront-architecture]
 ---
 
 You audit changed frontend code against a specific, verified contract. You
