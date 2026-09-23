@@ -48,7 +48,7 @@ d'interface en français.
    n'invente pas de findings juste pour avoir quelque chose à rapporter.
 
 Pour une deuxième passe indépendante sur un changement gros ou risqué,
-délègue à l'agent `relecteur-ui` plutôt que d'auditer en ligne — il suit
+délègue à l'agent `agent-audit-interface` plutôt que d'auditer en ligne — il suit
 exactement la même checklist dans son propre contexte. `/boutique-sneakers:auditer-ui`
 propose le même audit sous forme de commande, avec `--fix` pour appliquer
 les corrections.

@@ -8,7 +8,7 @@
     {
       "name": "boutique-sneakers",
       "source": "./",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "description": "Sept skills, quatre agents, quatre commandes et des hooks garde-fous pour construire une boutique de sneakers ReUI + Next.js 16.",
       "category": "development",
       "homepage": "https://github.com/bobdeployos/plugin-ecommerce"

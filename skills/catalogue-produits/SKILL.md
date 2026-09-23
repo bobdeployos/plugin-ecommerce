@@ -48,5 +48,5 @@ et des paires avant/après.
 
    Puis indiquer quels IDs de photo ont été vérifiés.
 
-Pour déléguer la rédaction, l'agent `redacteur-catalogue` applique ces règles ;
+Pour déléguer la rédaction, l'agent `agent-redaction-fiches-produits` applique ces règles ;
 `/boutique-sneakers:produit` lance le workflow de bout en bout.

@@ -12,7 +12,7 @@ Détermine d'abord le périmètre :
   `app/` et `components/`. Si l'arborescence est propre, audite le dernier commit.
 - Avec un chemin ou un glob, audite exactement celui-ci.
 
-Lance ensuite l'agent **relecteur-ui** sur ce périmètre. Il connaît la
+Lance ensuite l'agent **agent-audit-interface** sur ce périmètre. Il connaît la
 checklist ; ne la redéroule pas toi-même.
 
 En parallèle de l'agent, lance le scan statique pour les violations mécaniques :

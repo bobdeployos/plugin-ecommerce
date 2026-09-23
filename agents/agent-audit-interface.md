@@ -1,5 +1,5 @@
 ---
-name: relecteur-ui
+name: agent-audit-interface
 description: À utiliser après toute modification sous components/ ou app/ pour auditer le changement par rapport au contrat frontend de la boutique — composition Base UI plutôt que Radix, mise en page desktop uniquement, tokens de design, next/image, discipline des données du catalogue et règles d'adaptation ReUI. Rapporte des constats ; ne réécrit que sur demande.
 model: sonnet
 effort: high

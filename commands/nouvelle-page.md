@@ -8,7 +8,7 @@ Ajoute une nouvelle page à la boutique : `$ARGUMENTS`
 
 Ne commence pas à écrire du JSX. Procède dans cet ordre.
 
-**1. Choisis le bloc.** Lance l'agent **eclaireur-blocs** avec la description de
+**1. Choisis le bloc.** Lance l'agent **agent-recherche-bloc-reui** avec la description de
 la surface. Il rend une recommandation, la commande d'installation, la vraie
 API et des notes d'adaptation. S'il indique que le bloc est déjà installé,
 adapte la copie existante dans `components/blocks/` au lieu de l'installer à nouveau.

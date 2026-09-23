@@ -46,18 +46,18 @@ sont des skills de **procédure** (la marche à suivre pour une tâche).
 | `audit-contrat-frontend` | procédure | Auditer un diff d'interface par rapport au contrat avant de le déclarer terminé, avec un rapport classé par gravité |
 | `fiche-produit-catalogue` | procédure | Rédiger ou réviser une fiche produit champ par champ, dans le ton, chaque photo vérifiée par `scripts/verifier_photo.sh` |
 
-Les agents préchargent le skill de procédure correspondant : `eclaireur-blocs` →
-`integration-bloc-reui`, `relecteur-ui` → `audit-contrat-frontend`,
-`redacteur-catalogue` → `fiche-produit-catalogue`.
+Les agents préchargent le skill de procédure correspondant : `agent-recherche-bloc-reui` →
+`integration-bloc-reui`, `agent-audit-interface` → `audit-contrat-frontend`,
+`agent-redaction-fiches-produits` → `fiche-produit-catalogue`.
 
 ### Agents — les spécialistes
 
 | Agent | À utiliser pour |
 | --- | --- |
-| `eclaireur-blocs` | Décider à partir de quel bloc ReUI construire une nouvelle surface. Rapporte une recommandation et la vraie API ; n'écrit pas de code applicatif |
-| `relecteur-ui` | Auditer un diff par rapport au contrat frontend — composition, mise en page, tokens, images, discipline des données |
-| `redacteur-catalogue` | Ajouter ou réécrire des produits, dans le ton, chaque photo vérifiée |
-| `auditeur-tunnel-achat` | Parcourir tout le tunnel d'achat à la recherche de montants et de compteurs qui divergent en silence |
+| `agent-recherche-bloc-reui` | Décider à partir de quel bloc ReUI construire une nouvelle surface. Rapporte une recommandation et la vraie API ; n'écrit pas de code applicatif |
+| `agent-audit-interface` | Auditer un diff par rapport au contrat frontend — composition, mise en page, tokens, images, discipline des données |
+| `agent-redaction-fiches-produits` | Ajouter ou réécrire des produits, dans le ton, chaque photo vérifiée |
+| `agent-audit-panier-paiement` | Parcourir tout le tunnel d'achat à la recherche de montants et de compteurs qui divergent en silence |
 
 ### Commandes
 

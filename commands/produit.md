@@ -6,7 +6,7 @@ allowed-tools: Bash(node:*), Bash(npx:*), Bash(npm:*), Bash(curl:*)
 
 Ajoute ou révise un produit du catalogue : `$ARGUMENTS`
 
-Lance l'agent **redacteur-catalogue** pour cela. Il porte le ton éditorial et la
+Lance l'agent **agent-redaction-fiches-produits** pour cela. Il porte le ton éditorial et la
 procédure de vérification des photos.
 
 Ce qu'il doit produire, dans `lib/catalog.ts` et nulle part ailleurs :

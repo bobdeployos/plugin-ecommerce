@@ -63,6 +63,6 @@ repère — copie sa *forme*, jamais son *contenu*.
 
 Pour un ajout qui demande beaucoup de recherche — sourcer la photographie
 depuis rien pour un produit entièrement nouveau à partir d'un brief d'une
-ligne — envisage de déléguer à l'agent `redacteur-catalogue` pour que le travail
+ligne — envisage de déléguer à l'agent `agent-redaction-fiches-produits` pour que le travail
 se fasse dans son propre contexte. Il suit la même procédure.
 `/boutique-sneakers:produit` le lance sous forme de commande.

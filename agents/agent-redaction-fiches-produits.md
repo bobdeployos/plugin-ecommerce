@@ -1,5 +1,5 @@
 ---
-name: redacteur-catalogue
+name: agent-redaction-fiches-produits
 description: À utiliser pour ajouter un produit au catalogue de la boutique ou réécrire la copy produit, les specs, les highlights ou les avis. Écrit dans le ton éditorial établi (la copy reste en anglais) et vérifie que chaque photo Unsplash résout avant de la committer.
 model: sonnet
 effort: medium

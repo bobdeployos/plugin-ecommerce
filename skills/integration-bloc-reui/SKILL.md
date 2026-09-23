@@ -55,7 +55,7 @@ installés et une adaptation commentée.
      a changé.
 7. **Valide** — `validate_usage` et `get_audit_checklist` avant de
    considérer que c'est fini. Pour une passe plus poussée, délègue à
-   l'agent `relecteur-ui`, ou utilise le skill `audit-contrat-frontend`.
+   l'agent `agent-audit-interface`, ou utilise le skill `audit-contrat-frontend`.
 
 Si vraiment rien dans le registre ne convient, dis-le explicitement plutôt
 que de bricoler discrètement — nomme les primitives les plus proches à
@@ -64,5 +64,5 @@ partir desquelles composer.
 Pour le contexte plus large (configuration de la licence, mise en place des
 tokens de thème, le piège `lucide-react`), vois le skill
 `blocs-premium-reui`. Pour déléguer la recherche elle-même, utilise l'agent
-`eclaireur-blocs` ; `/boutique-sneakers:nouvelle-page` déroule toute cette procédure de bout
+`agent-recherche-bloc-reui` ; `/boutique-sneakers:nouvelle-page` déroule toute cette procédure de bout
 en bout pour une nouvelle route.

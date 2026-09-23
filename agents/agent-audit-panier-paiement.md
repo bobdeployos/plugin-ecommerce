@@ -1,5 +1,5 @@
 ---
-name: auditeur-tunnel-achat
+name: agent-audit-panier-paiement
 description: À utiliser avant de livrer toute modification du panier, du mini-panier, du récapitulatif de commande ou du parcours de checkout. Parcourt tout le chemin d'achat à la recherche des endroits où les montants, le compteur du panier et le verrouillage des étapes divergent, et vérifie que la démo ne laisse jamais croire qu'un vrai paiement est effectué.
 model: opus
 effort: high
