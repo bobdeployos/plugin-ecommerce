@@ -38,17 +38,17 @@ sont des skills de **procédure** (la marche à suivre pour une tâche).
 
 | Skill | Type | Couvre |
 | --- | --- | --- |
-| `blocs-premium-reui` | référence | Trouver, installer et adapter les blocs premium ; le piège Base UI vs Radix ; la licence ; le thème |
-| `regles-nextjs-16` | référence | Les changements cassants de Next 16 qui font vraiment mal — `params` asynchrones, config des images, disparition de `next lint`, et le bug de frontière RSC |
-| `architecture-boutique` | référence | Où vit chaque chose, le shell desktop uniquement, l'état du panier, le calcul des totaux |
-| `catalogue-produits` | référence | Le contrat `Product`, le ton éditorial, et comment vérifier qu'une photo répond |
-| `integration-bloc-reui` | procédure | Construire une page, une section ou un panneau à partir du bon bloc — recherche, vraie API, installation, adaptation dans `components/storefront/`, validation |
-| `audit-contrat-frontend` | procédure | Auditer un diff d'interface par rapport au contrat avant de le déclarer terminé, avec un rapport classé par gravité |
-| `fiche-produit-catalogue` | procédure | Rédiger ou réviser une fiche produit champ par champ, dans le ton, chaque photo vérifiée par `scripts/verifier_photo.sh` |
+| `skill-guide-blocs-reui` | référence | Trouver, installer et adapter les blocs premium ; le piège Base UI vs Radix ; la licence ; le thème |
+| `skill-regles-nextjs-16` | référence | Les changements cassants de Next 16 qui font vraiment mal — `params` asynchrones, config des images, disparition de `next lint`, et le bug de frontière RSC |
+| `skill-architecture-boutique` | référence | Où vit chaque chose, le shell desktop uniquement, l'état du panier, le calcul des totaux |
+| `skill-regles-catalogue-produits` | référence | Le contrat `Product`, le ton éditorial, et comment vérifier qu'une photo répond |
+| `skill-creer-page-avec-bloc-reui` | procédure | Construire une page, une section ou un panneau à partir du bon bloc — recherche, vraie API, installation, adaptation dans `components/storefront/`, validation |
+| `skill-verifier-interface` | procédure | Auditer un diff d'interface par rapport au contrat avant de le déclarer terminé, avec un rapport classé par gravité |
+| `skill-ajouter-fiche-produit` | procédure | Rédiger ou réviser une fiche produit champ par champ, dans le ton, chaque photo vérifiée par `scripts/verifier_photo.sh` |
 
 Les agents préchargent le skill de procédure correspondant : `agent-recherche-bloc-reui` →
-`integration-bloc-reui`, `agent-audit-interface` → `audit-contrat-frontend`,
-`agent-redaction-fiches-produits` → `fiche-produit-catalogue`.
+`skill-creer-page-avec-bloc-reui`, `agent-audit-interface` → `skill-verifier-interface`,
+`agent-redaction-fiches-produits` → `skill-ajouter-fiche-produit`.
 
 ### Agents — les spécialistes
 

@@ -4,7 +4,7 @@ description: À utiliser pour ajouter un produit au catalogue de la boutique ou 
 model: sonnet
 effort: medium
 tools: Read, Edit, Write, Glob, Grep, Bash, WebFetch, WebSearch
-skills: [boutique-sneakers:fiche-produit-catalogue, boutique-sneakers:catalogue-produits]
+skills: [boutique-sneakers:skill-ajouter-fiche-produit, boutique-sneakers:skill-regles-catalogue-produits]
 ---
 
 Tu rédiges et révises le catalogue produit d'un atelier de sneakers haut de gamme.

@@ -1,6 +1,6 @@
 ---
-name: blocs-premium-reui
-description: Skill de référence (connaissances) sur les blocs premium ReUI dans une boutique ReUI — trouver le bon bloc premium, l'installer depuis le registre, lire sa vraie API et l'adapter sur les vraies données. Couvre aussi les règles de composition Base UI (base-nova) qui diffèrent de Radix, la mise en place de la clé de licence du registre premium, l'amorçage des tokens de thème et le piège `lucide-react`. À utiliser quand on construit ou modifie une surface d'interface de la boutique et qu'on a besoin des règles et des faits sous-jacents (surface Card vs Frame, `render` vs `asChild`, `SelectValue`, `Accordion`, tokens vs classes de palette, licence dans `components.json`), ou quand une installation `shadcn add @reui/...` échoue. Pour le déroulé pas à pas d'une intégration de bloc, utiliser le skill de workflow `integration-bloc-reui`.
+name: skill-guide-blocs-reui
+description: Skill de référence (connaissances) sur les blocs premium ReUI dans une boutique ReUI — trouver le bon bloc premium, l'installer depuis le registre, lire sa vraie API et l'adapter sur les vraies données. Couvre aussi les règles de composition Base UI (base-nova) qui diffèrent de Radix, la mise en place de la clé de licence du registre premium, l'amorçage des tokens de thème et le piège `lucide-react`. À utiliser quand on construit ou modifie une surface d'interface de la boutique et qu'on a besoin des règles et des faits sous-jacents (surface Card vs Frame, `render` vs `asChild`, `SelectValue`, `Accordion`, tokens vs classes de palette, licence dans `components.json`), ou quand une installation `shadcn add @reui/...` échoue. Pour le déroulé pas à pas d'une intégration de bloc, utiliser le skill de workflow `skill-creer-page-avec-bloc-reui`.
 group: storefront
 icon: layers
 ---
@@ -13,7 +13,7 @@ stepper de checkout, arrêtez-vous : le registre en contient déjà un, et une
 version faite maison ne s'accordera pas avec le reste de la boutique.
 
 Ce skill rassemble les connaissances ; le déroulé pas à pas d'une intégration
-se trouve dans le skill `integration-bloc-reui`. Le code, les commentaires de
+se trouve dans le skill `skill-creer-page-avec-bloc-reui`. Le code, les commentaires de
 code et tout le texte visible par l'utilisateur restent en anglais (l'interface
 de la boutique est exclusivement en anglais).
 

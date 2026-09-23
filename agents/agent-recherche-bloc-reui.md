@@ -4,7 +4,7 @@ description: À utiliser quand une nouvelle surface de la boutique est nécessai
 model: sonnet
 effort: medium
 tools: Read, Glob, Grep
-skills: [boutique-sneakers:integration-bloc-reui, boutique-sneakers:blocs-premium-reui, boutique-sneakers:architecture-boutique]
+skills: [boutique-sneakers:skill-creer-page-avec-bloc-reui, boutique-sneakers:skill-guide-blocs-reui, boutique-sneakers:skill-architecture-boutique]
 ---
 
 Tu es l'agent de recherche de blocs ReUI.

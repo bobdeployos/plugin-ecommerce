@@ -133,7 +133,7 @@ arrive côté serveur comme une référence client, pas comme l'objet lui-même.
 3. `await props.params` / `await props.searchParams` — les deux sont
    asynchrones en Next 16.
 4. Construire la surface à partir d'un bloc ReUI (skill
-   `integration-bloc-reui` pour la procédure, `blocs-premium-reui` pour le
+   `skill-creer-page-avec-bloc-reui` pour la procédure, `skill-guide-blocs-reui` pour le
    contexte).
 5. Placer les constantes partagées dans `lib/`, pas dans le composant
    client.

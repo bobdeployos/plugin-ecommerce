@@ -1,6 +1,6 @@
 ---
-name: catalogue-produits
-description: Skill de référence (connaissances) sur le catalogue produit de la boutique — le contrat de données Product dans lib/catalog.ts, la photographie Unsplash et sa vérification, le ton éditorial, les avis et les facettes dérivées. À utiliser quand il faut ajouter un produit, changer un prix, trouver ou vérifier une photo produit, ou écrire la copy, les specs et les avis d'une fiche, et chaque fois qu'on a besoin de savoir quelle forme doit avoir une donnée produit ou pourquoi. Pour la procédure pas à pas de saisie ou de révision d'une fiche, utiliser le skill de workflow `fiche-produit-catalogue`, qui s'appuie sur celui-ci.
+name: skill-regles-catalogue-produits
+description: Skill de référence (connaissances) sur le catalogue produit de la boutique — le contrat de données Product dans lib/catalog.ts, la photographie Unsplash et sa vérification, le ton éditorial, les avis et les facettes dérivées. À utiliser quand il faut ajouter un produit, changer un prix, trouver ou vérifier une photo produit, ou écrire la copy, les specs et les avis d'une fiche, et chaque fois qu'on a besoin de savoir quelle forme doit avoir une donnée produit ou pourquoi. Pour la procédure pas à pas de saisie ou de révision d'une fiche, utiliser le skill de workflow `skill-ajouter-fiche-produit`, qui s'appuie sur celui-ci.
 group: storefront
 icon: package
 ---

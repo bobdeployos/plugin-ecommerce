@@ -1,5 +1,5 @@
 ---
-name: audit-contrat-frontend
+name: skill-verifier-interface
 description: Audite le code frontend modifié dans app/ ou components/ par rapport au contrat vérifié de ce projet avant de considérer un changement d'interface terminé — composition Base UI (render vs asChild), la règle de mise en page desktop uniquement, les tokens de design vs les classes Tailwind de palette brutes, l'usage de next/image, la frontière serveur/client, l'état du panier, et les règles d'hygiène des blocs ReUI. À utiliser après avoir écrit ou modifié un composant, une page, ou un bloc ReUI adapté, dès que l'utilisateur demande de relire, vérifier, auditer, ou « s'assurer que c'est bon » pour du travail d'interface, ou avant de déclarer une tâche frontend terminée — même s'il ne nomme aucune règle précise. Ne pas utiliser pour relire un changement qui touche uniquement les données produit dans lib/catalog.ts sans toucher à un composant, ni pour du code backend/non-UI en dehors de app/ et components/.
 ---
 

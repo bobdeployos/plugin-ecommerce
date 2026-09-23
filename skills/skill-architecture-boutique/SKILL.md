@@ -1,6 +1,6 @@
 ---
-name: architecture-boutique
-description: Skill de référence (connaissances) sur l'architecture de la boutique APEX ATELIER — où vit chaque route, composant et module de lib/, comment fonctionne le shell desktop uniquement, comment circule l'état du panier et de la wishlist, et comment sont calculés les totaux de commande. À utiliser quand il faut naviguer dans le code ou l'étendre, avant d'ajouter une page, de déplacer un composant, de toucher au panier ou aux totaux, ou dès qu'on se demande « où est-ce que ça doit aller ? ». Pour la procédure pas à pas de construction d'une nouvelle surface à partir d'un bloc ReUI, utiliser le skill de workflow `integration-bloc-reui`.
+name: skill-architecture-boutique
+description: Skill de référence (connaissances) sur l'architecture de la boutique APEX ATELIER — où vit chaque route, composant et module de lib/, comment fonctionne le shell desktop uniquement, comment circule l'état du panier et de la wishlist, et comment sont calculés les totaux de commande. À utiliser quand il faut naviguer dans le code ou l'étendre, avant d'ajouter une page, de déplacer un composant, de toucher au panier ou aux totaux, ou dès qu'on se demande « où est-ce que ça doit aller ? ». Pour la procédure pas à pas de construction d'une nouvelle surface à partir d'un bloc ReUI, utiliser le skill de workflow `skill-creer-page-avec-bloc-reui`.
 group: storefront
 icon: map
 ---
@@ -43,7 +43,7 @@ avant/après.
 3. `await props.params` / `await props.searchParams` — les deux sont
    asynchrones.
 4. Construire la surface à partir d'un bloc ReUI (voir le skill
-   `integration-bloc-reui` pour la procédure, et `blocs-premium-reui` pour
+   `skill-creer-page-avec-bloc-reui` pour la procédure, et `skill-guide-blocs-reui` pour
    le contexte).
 5. Placer les constantes partagées dont la page serveur a besoin dans `lib/`,
    pas dans le composant client.

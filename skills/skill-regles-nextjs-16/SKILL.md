@@ -1,6 +1,6 @@
 ---
-name: regles-nextjs-16
-description: Skill de référence (connaissances) sur les changements cassants de Next.js 16 dans cette boutique. À utiliser quand on écrit ou relit du code Next.js ici — une page, un layout, une route, `next.config.ts`, un import entre Server et Client Components, la config Tailwind v4 — ou quand une page plante à l'exécution alors que le build est vert. Couvre `params` / `searchParams` / `cookies()` / `headers()` asynchrones, `npx next typegen` et `PageProps`, `images.remotePatterns` et le défaut `images.qualities`, Turbopack par défaut, la suppression de `next lint`, et le piège de la frontière serveur/client. Pour auditer un changement d'interface terminé contre ces règles, utiliser le skill de workflow `audit-contrat-frontend`.
+name: skill-regles-nextjs-16
+description: Skill de référence (connaissances) sur les changements cassants de Next.js 16 dans cette boutique. À utiliser quand on écrit ou relit du code Next.js ici — une page, un layout, une route, `next.config.ts`, un import entre Server et Client Components, la config Tailwind v4 — ou quand une page plante à l'exécution alors que le build est vert. Couvre `params` / `searchParams` / `cookies()` / `headers()` asynchrones, `npx next typegen` et `PageProps`, `images.remotePatterns` et le défaut `images.qualities`, Turbopack par défaut, la suppression de `next lint`, et le piège de la frontière serveur/client. Pour auditer un changement d'interface terminé contre ces règles, utiliser le skill de workflow `skill-verifier-interface`.
 group: storefront
 icon: triangle
 ---
@@ -14,7 +14,7 @@ documentation alignée sur sa version dans `node_modules/next/dist/docs/`, et
 changements cassants. Vérifiez-la plutôt que de vous fier à votre mémoire.
 
 Ce skill rassemble les connaissances ; pour auditer un changement d'interface,
-utilisez le skill `audit-contrat-frontend`.
+utilisez le skill `skill-verifier-interface`.
 
 Détails et justification de chaque règle : [reference.md](reference.md).
 Exemples avant/après : [examples.md](examples.md).

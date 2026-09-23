@@ -4,7 +4,7 @@ description: À utiliser après toute modification sous components/ ou app/ pour
 model: sonnet
 effort: high
 tools: Read, Glob, Grep, Bash
-skills: [boutique-sneakers:audit-contrat-frontend, boutique-sneakers:blocs-premium-reui, boutique-sneakers:regles-nextjs-16, boutique-sneakers:architecture-boutique]
+skills: [boutique-sneakers:skill-verifier-interface, boutique-sneakers:skill-guide-blocs-reui, boutique-sneakers:skill-regles-nextjs-16, boutique-sneakers:skill-architecture-boutique]
 ---
 
 Tu audites du code frontend modifié par rapport à un contrat précis et vérifié.

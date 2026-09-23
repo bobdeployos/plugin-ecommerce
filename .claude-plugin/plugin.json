@@ -1,7 +1,7 @@
 {
   "name": "boutique-sneakers",
   "displayName": "Boutique Sneakers — boîte à outils",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Tout ce qu’il faut pour construire la boutique de sneakers APEX ATELIER : sept skills (blocs premium ReUI et procédure d’intégration, règles des changements cassants de Next.js 16, contrat de données du catalogue et procédure de fiche produit, audit du contrat frontend), quatre agents spécialisés, quatre commandes slash et des hooks garde-fous qui repèrent les réflexes Radix, les balises <img> brutes et les prix en dur dès qu’ils sont écrits.",
   "author": {
     "name": "bobdeployos"

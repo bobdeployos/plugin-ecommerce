@@ -1,5 +1,5 @@
 ---
-name: fiche-produit-catalogue
+name: skill-ajouter-fiche-produit
 description: Rédige ou révise une fiche produit dans lib/catalog.ts pour la boutique — le slug, la tagline, le story en deux paragraphes, les quatre highlights, les 2-3 coloris avec chacun sa photo Unsplash vérifiée, le size run, les trois groupes de specs, et les avis. À utiliser dès que l'utilisateur veut ajouter une nouvelle sneaker/paire/silhouette au catalogue, réapprovisionner ou retirer un produit, changer un prix ou un badge de promo, réécrire une tagline/un story/des highlights/des specs, ou ajouter/modifier des avis clients — même s'il dit juste « ajoute cette paire au site » ou colle un brief produit sans jamais nommer lib/catalog.ts. À utiliser aussi pour relire une fiche existante et vérifier le ton ou des champs manquants. Ne pas utiliser pour un changement de composant ou de mise en page dans l'affichage des produits, ni pour choisir quel bloc ReUI affiche une surface produit.
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: integration-bloc-reui
+name: skill-creer-page-avec-bloc-reui
 description: Procédure pas à pas pour trouver, installer et adapter un bloc premium ReUI (style base-nova / Base UI) pour une surface nouvelle ou modifiée de la boutique — une page, une section, un panneau, un hero, une grille, une barre latérale, un panier ou un écran de checkout. À utiliser dès que l'utilisateur demande de construire une nouvelle page ou section, d'ajouter une surface d'interface, de refaire une partie de la boutique, ou veut un composant qui dépasse la simple retouche de code existant — même s'il ne dit jamais « ReUI », « bloc » ou « shadcn » (ex : « ajoute une page wishlist », « il me faut une section témoignages », « fais un panneau guide des tailles »). Couvre aussi l'adaptation d'un bloc déjà installé depuis components/blocks/ vers components/storefront/. Ne pas utiliser pour modifier des données produit (ça relève de lib/catalog.ts), ni pour une simple retouche de contenu ou de texte sans nouvelle structure d'interface.
 ---
 
@@ -55,7 +55,7 @@ installés et une adaptation commentée.
      a changé.
 7. **Valide** — `validate_usage` et `get_audit_checklist` avant de
    considérer que c'est fini. Pour une passe plus poussée, délègue à
-   l'agent `agent-audit-interface`, ou utilise le skill `audit-contrat-frontend`.
+   l'agent `agent-audit-interface`, ou utilise le skill `skill-verifier-interface`.
 
 Si vraiment rien dans le registre ne convient, dis-le explicitement plutôt
 que de bricoler discrètement — nomme les primitives les plus proches à
@@ -63,6 +63,6 @@ partir desquelles composer.
 
 Pour le contexte plus large (configuration de la licence, mise en place des
 tokens de thème, le piège `lucide-react`), vois le skill
-`blocs-premium-reui`. Pour déléguer la recherche elle-même, utilise l'agent
+`skill-guide-blocs-reui`. Pour déléguer la recherche elle-même, utilise l'agent
 `agent-recherche-bloc-reui` ; `/boutique-sneakers:nouvelle-page` déroule toute cette procédure de bout
 en bout pour une nouvelle route.

@@ -4,7 +4,7 @@ description: À utiliser avant de livrer toute modification du panier, du mini-p
 model: opus
 effort: high
 tools: Read, Glob, Grep, Bash
-skills: [boutique-sneakers:architecture-boutique, boutique-sneakers:catalogue-produits]
+skills: [boutique-sneakers:skill-architecture-boutique, boutique-sneakers:skill-regles-catalogue-produits]
 ---
 
 Tu audites le parcours d'achat : carte produit → mini-panier → page panier →

@@ -29,7 +29,7 @@ Ensuite :
 - Si tout est propre, dis-le en une ligne. Ne reformule pas la sortie.
 - Si des violations sont rapportées, **corrige-les** au lieu de seulement les
   lister — chacune a une forme correcte documentée dans les skills
-  `blocs-premium-reui` et `architecture-boutique`. Relance le script
+  `skill-guide-blocs-reui` et `skill-architecture-boutique`. Relance le script
   ensuite pour confirmer.
 - Les blocs orphelins (installés mais jamais adaptés) ne sont pas des erreurs.
   Mentionne-les une fois comme surfaces disponibles ; ne les supprime pas.
